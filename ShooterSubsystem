@@ -1,0 +1,27 @@
+package org.usfirst.frc.team1360.robot.subsystems;
+
+import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.command.Subsystem;
+import org.usfirst.frc.team1360.robot.Robot;
+
+/**
+ *
+ */
+public class ShooterSubsystem extends Subsystem {
+    
+    // Put methods for controlling this subsystem
+    // here. Call these from Commands.
+
+    public void initDefaultCommand() {
+        // Set the default command for a subsystem here.
+        //setDefaultCommand(new MySpecialCommand());
+    }
+    
+    public void sampleEncoder(){
+    	Encoder sampleEncoder = new Encoder(0, 1, false, Encoder.EncodingType.k4X);
+    	sampleEncoder.reset();
+    
+    }
+    
+}
+
